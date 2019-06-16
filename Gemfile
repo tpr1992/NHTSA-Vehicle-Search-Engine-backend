@@ -13,8 +13,10 @@ gem 'puma', '~> 3.11'
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
+
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
 gem 'rack-cors'
 
