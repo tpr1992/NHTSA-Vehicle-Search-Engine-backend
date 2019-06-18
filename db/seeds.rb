@@ -8,6 +8,14 @@
 
 User.destroy_all
 
+
+
+
+  @url = "http://www.recipepuppy.com/api/"
+  (1..10).each do |x|
+    @names << HTTParty.get(@url).parsed_response['name']
+  end
+
 5.times do
-  User.create(name: Faker::Name.name, username: Faker::Name.initials, password: 123.to_s)
+  User.create(name: Faker::Name.name, username: Faker::Name.initials + rand(1980..2019).to_s, password: 123.to_s)
 end
