@@ -1,4 +1,4 @@
-NHTSA Search Engine Backend
+###NHTSA Search Engine Backend
 
 To start, please run rails s on port 3000, and `npm start` for the frontend. 
 
