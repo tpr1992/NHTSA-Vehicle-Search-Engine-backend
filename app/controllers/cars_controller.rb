@@ -16,12 +16,10 @@ class CarsController < ApplicationController
       model: params[:model],
       user_id: params[:user_id]
     )
-
     if @car.save
       render json: @user
     else
       render json: {errors: @car.errors.full_messages}
     end
   end
-
 end
