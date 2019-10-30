@@ -10,7 +10,6 @@ class LikedCarsController < ApplicationController
       user_id: params[:user_id],
       car_id: params[:car_id],
     )
-
     if @liked_car.save
       render json: @liked_car
     else
